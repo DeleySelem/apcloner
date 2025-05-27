@@ -1,7 +1,5 @@
 # APCloner v4.2 - Passive WiFi Handshake Capture Tool
 
-![APCloner Banner](assets/banner.png)
-
 A non-intrusive wireless security assessment tool that passively captures WPA handshakes by creating cloned access point replicas. **Does not perform deauthentication attacks.**
 
 ## 📖 Description
@@ -16,7 +14,7 @@ APCloner creates multiple cloned replicas of a target access point, acting as Wi
 ## ✨ Features
 
 - 🛡️ Passive handshake capture methodology
-- 📶 Creates 5 monitor interfaces for cloning
+- 📶 Creates 5 monitor interfaces
 - 🎯 Automatic handshake detection & alerting
 - 🖥️ Interactive menu and CLI modes
 - 📊 Wireless network scanner integration
@@ -34,11 +32,9 @@ APCloner creates multiple cloned replicas of a target access point, acting as Wi
 
 ## 📦 Dependencies
 
-```bash
 sudo apt install aircrack-ng xterm macchanger
 
 ⚙️ Installation
-bash
 
 # 1. Clone repository
 git clone https://github.com/deleyselem/apcloner.git
@@ -53,7 +49,6 @@ sudo apcloner
 
 🚀 Usage
 Interactive Mode
-bash
 
 sudo apcloner
 
@@ -66,7 +61,6 @@ Follow the menu to:
     Start cloning
 
 Direct Execution
-bash
 
 sudo apcloner [MAC] [SSID] [CHANNEL]
 
@@ -84,17 +78,10 @@ Key Functions
     Automatic process termination on successful capture
 
 🔍 Technical Overview
-sequenceDiagram
-    participant User
-    participant APCloner
-    participant TargetAP
-    participant ClientDevice
-    
-    User->>APCloner: Start cloning
-    APCloner->>TargetAP: Scan & clone parameters
-    APCloner->>ClientDevice: Broadcast cloned APs
-    ClientDevice->>APCloner: Voluntary connection
-    APCloner->>User: Capture handshake to .cap file
+
+![Screenshot From 2025-05-26 22-46-04](https://github.com/user-attachments/assets/b107e814-3daa-4e19-83be-42c33f713f08)
+
+
 🤝 Contributing
 
     Fork the repository
