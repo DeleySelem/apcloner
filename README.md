@@ -13,7 +13,7 @@ APCloner creates multiple cloned replicas of a target access point, acting as Wi
 
 ## ✨ Features
 
-- 🛡️ Passive handshake capture methodology
+- 🛡️ Stealth handshake capture methodology
 - 📶 Creates 5 monitor interfaces
 - 🎯 Automatic handshake detection & alerting
 - 🖥️ Interactive menu and CLI modes
