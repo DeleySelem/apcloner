@@ -1,6 +1,6 @@
-# APCloner v4.2 - Passive WiFi Handshake Capture Tool
+# APCloner v4.2 - WiFi Handshake Capture Tool
 
-A non-intrusive wireless security assessment tool that passively captures WPA handshakes by creating cloned access point replicas. **Does not perform deauthentication attacks.**
+A non-intrusive wireless security assessment tool that captures WPA handshakes by creating cloned access point replicas. **Does not perform deauthentication attacks.**
 
 ## 📖 Description
 
