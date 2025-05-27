@@ -41,7 +41,7 @@ sudo apt install aircrack-ng xterm macchanger
 bash
 
 # 1. Clone repository
-git clone https://github.com/yourusername/apcloner.git
+git clone https://github.com/deleyselem/apcloner.git
 cd apcloner
 
 # 2. Run installer
@@ -84,8 +84,17 @@ Key Functions
     Automatic process termination on successful capture
 
 🔍 Technical Overview
-Diagram
-Code
+sequenceDiagram
+    participant User
+    participant APCloner
+    participant TargetAP
+    participant ClientDevice
+    
+    User->>APCloner: Start cloning
+    APCloner->>TargetAP: Scan & clone parameters
+    APCloner->>ClientDevice: Broadcast cloned APs
+    ClientDevice->>APCloner: Voluntary connection
+    APCloner->>User: Capture handshake to .cap file
 🤝 Contributing
 
     Fork the repository
