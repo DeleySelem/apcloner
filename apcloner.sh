@@ -196,7 +196,7 @@ main_menu() {
         case $choice in
             1) scan_networks ;;
             2) input_ap_data ;;
-            3) cleanup; exit 0 ;;
+            3) exit 0 ;;
             *) echo -e "${RED}Invalid option!${RESET}" ;;
         esac
     done
